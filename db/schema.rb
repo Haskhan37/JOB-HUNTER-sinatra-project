@@ -11,23 +11,24 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 20200327191034) do
 
-  create_table "jobs", id: false, force: :cascade do |t|
-    t.text "company_name"
-    t.text "description"
-    t.text "title"
-    t.text "salary"
-    t.text "location"
-    t.text "timestamps"
+  create_table "jobs", force: :cascade do |t|
+    t.text    "company_name"
+    t.text    "description"
+    t.text    "title"
+    t.text    "salary"
+    t.text    "location"
+    t.text    "timestamps"
+    t.integer "user_id"
   end
 
-  create_table "users", id: false, force: :cascade do |t|
-    t.text    "username"
-    t.text    "email"
-    t.text    "password_digest"
-    t.integer "user_id"
-    t.text    "timestamps"
+  create_table "users", force: :cascade do |t|
+    t.string   "username"
+    t.string   "email"
+    t.string   "password_digest"
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
   end
 
 end

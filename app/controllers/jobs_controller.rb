@@ -6,7 +6,7 @@ class JobsController < ApplicationController
   # GET: /jobs
   get "/jobs" do
     redirect_if_not_logged_in
-    @vacations = Job.all
+    @jobs = Job.all
     erb :"/jobs/index"
   end
 
