@@ -1,0 +1,10 @@
+<h2>Welcome, <%= current_user.username %></h2>
+
+<h3>Job Listings</h3>
+<ul>
+<% @jobs.each_with_index do |job, index| %>
+<a href='/jobs/<%=job.id%>'><li><%= index+1 %>. <%= job.location_name %></li></a>
+<%end%>
+</ul><br><br>
+<button style="padding:5px 10px" onclick="window.location.href = '/jobs/new';">Create New Job Listing</button>
+<button style="padding:5px 10px" onclick="window.location.href = '/logout';">Logout</button>

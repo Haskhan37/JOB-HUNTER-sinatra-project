@@ -1,0 +1,18 @@
+<b>Company Name: </b><%= @job.company_name %><br>
+<b>Description: </b><%= @job.description %><br>
+<b>Title: </b><%= @job.title %><br>
+<b>Salary: </b><%= @job.salary %><br>
+<b>Location: </b><%= @vacation.user.username %><br>
+<br><br>
+<div class="display-page">
+<% if @job.user_id == current_user.id %>
+<form action="/jobs/<%=@job.id%>/delete" method="post">
+<input id="hidden" type="hidden" name="_method" value="DELETE">
+<input class="btn-delete" type="submit" value="Delete Entry">
+
+</form>
+<button style="padding:5px 10px" onclick="window.location.href = '/jobs/<%=@job.id%>/edit';">Edit Entry</button>
+<% end %>
+<button style="padding:5px 10px" onclick="window.location.href = '/jobs';">Show All Entries</button>
+<button style="padding:5px 10px" onclick="window.location.href = '/logout';">Logout</button>
+</div>
