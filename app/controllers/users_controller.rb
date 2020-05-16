@@ -27,7 +27,7 @@ class UsersController < ApplicationController
     if !is_logged_in?
       erb :"/users/login"
     else
-      redirect to "/jobs/jobs"
+      redirect to "/jobs"
     end
   end
 
