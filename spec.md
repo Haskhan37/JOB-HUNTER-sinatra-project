@@ -48,33 +48,12 @@
     - `validates :username, presence: { message: "is required." }`
     -- `validates :username, uniqueness: { case_sensitive: false, message: "is already taken, please try again." }`
   - User Model
-    - `validates :email, uniqueness: { case_sensitive: false }`
-    - `validates :phone, format: { with: /[1-9]\d{2}-\d{3}-\d{4}/, message: "only allows numbers and must be formatted as 'XXX-XXX-XXXX'."}`
-    - Note: The phone number formatting is different on the Heroku branch, mobile input does not provide a hyphen for user formatting. Future feature to format phone number after input planned.
-  - Pet Model
-    - No validators at this time.
+    - `validates :email, uniqueness: { case_sensitive: false }
 
 - [x] Your README.md includes a short description, install instructions, a contributors guide and a link to the license for your code
-
-Confirm
-- [x] You have a large number of small Git commits
-  - Master Branch - 90 commits
-  - Step-1 Branch - 40 commits
-  - Step-2 Branch - 79 commits
-  - Step-3 Branch - 86 commits
-  - Heroku Branch - 101 commits
-  - TOTAL COMMITS as of 12/15/19: 396
 
 - [x] Your commit messages are meaningful
 - [x] You made the changes in a commit that relate to the commit message
 - [x] You don't include changes in a commit that aren't related to the commit message
 
-## Bonus or Extra Project Features
 
-- [x] Other AR relationships
-
-  - The Account model contains the relationship `has_one :User`
-
-- [x] BONUS - not required - Display validation failures to user with error message (example form URL e.g. /posts/new)
-
-  - This project uses both the AR validation error messages as well as flash messaged to assist the end user.
