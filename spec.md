@@ -14,15 +14,15 @@
 
 - [x] Include more than one model class (e.g. User, Post, Category)
 
-  - This project has three models: Account, Pet, and User.
+  - This project has three models: Account, job, and User.
 
 - [x] Include at least one has_many relationship on your User model (e.g. User has_many Posts)
 
-  - The User model contains the relationship `has_many :pets`
+  - The User model contains the relationship `has_many :jobs`
 
 - [x] Include at least one belongs_to relationship on another model (e.g. Post belongs_to User)
 
-  - The Pet model contains the relationship `belongs_to :User`
+  - The job model contains the relationship `belongs_to :User`
   - The User model contains the relationship `belongs_to :Account`
 
 - [x] Include user accounts with unique login attribute (username or email)
