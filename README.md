@@ -7,4 +7,8 @@ run rake db:migrate
 
 run shotgun
 
+<<<<<<< HEAD
 AND ENJOY. Good luck!
+=======
+AND ENJOY. Good luck!
+>>>>>>> 96f10548df7af2c4c5cf30a883dd54bec6326488
